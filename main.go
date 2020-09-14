@@ -78,7 +78,6 @@ func main() {
 
 	go func() {
 		for {
-			p.Input()
 			state = float64(p.Read())
 			pinStatus.With(prometheus.Labels{
 				"pin_number_bcm": strconv.Itoa(c.Pin),
